@@ -10,6 +10,37 @@ class ExampleTest extends TestCase
      * A basic test example.
      */
 
+    public function test_value_is_greater_than()
+    {
+        $value1 = 10;
+        $value2 = 5;
+        $this->assertGreaterThan($value2, $value1);
+    }
+     
+    public function test_variable_is_array()
+    {
+        $array = [1, 2, 3];
+        $this->assertIsArray($array);
+    }
+     
+    public function test_value_is_null()
+    {
+        $value = null;
+        $this->assertNull($value);
+    }
+
+    public function test_string_contains_substring()
+    {
+        $string = 'Assert!';
+        $this->assertStringContainsString('Assert', $string);
+    }
+
+    public function test_array_has_specific_key()
+    {
+        $array = ['key' => 'value', 'another_key' => 'another_value'];
+        $this->assertArrayHasKey('key', $array);
+    }
+
     public function test_value(): void
     {
         $this->assertEquals(3,3);
@@ -20,6 +51,4 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
-
-   
 }

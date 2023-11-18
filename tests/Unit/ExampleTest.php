@@ -12,7 +12,7 @@ class ExampleTest extends TestCase
 
     public function test_value(): void
     {
-        $this->assertEquals(2,2);
+        $this->assertEquals(3,3);
     }
     
     public function test_that_true_is_true(): void

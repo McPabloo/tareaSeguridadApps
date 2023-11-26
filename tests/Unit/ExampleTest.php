@@ -51,4 +51,9 @@ class ExampleTest extends TestCase
         $this->assertTrue(true);
     }
 
+    public function test_value2(): void
+    {
+        $this->assertEquals(3,3);
+    }
+
 }

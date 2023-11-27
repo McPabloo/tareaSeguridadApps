@@ -53,7 +53,7 @@ class ExampleTest extends TestCase
 
     public function test_value2(): void
     {
-        $this->assertEquals(3,3);
+        $this->assertEquals(1,1);
     }
 
 }

@@ -19,7 +19,7 @@ class ExampleTest extends TestCase
      
     public function test_variable_is_array()
     {
-        $array = [1, 2, 3];
+        $array = 1;
         $this->assertIsArray($array);
     }
      
@@ -31,7 +31,7 @@ class ExampleTest extends TestCase
 
     public function test_string_contains_substring()
     {
-        $string = 'Assert!';
+        $string = 'asdasd';
         $this->assertStringContainsString('Assert', $string);
     }
 
